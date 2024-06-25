@@ -16,7 +16,7 @@ st.write("This app uses 6 inputs to predict the species of penguin using "
         "to get started!")
 
 password_guess = st.text_input('What is the Password?')
-if password_guess != 'streamlit_password':
+if password_guess != st.secrets["password"]:
   st.stop()
 
 # データを読み込む
